@@ -21,10 +21,12 @@ class Solution {
         {
             return true;
         }
-        else if(res.charAt(index)!=res.charAt(res.length()-1-index) )
+        else if(res.charAt(index)==res.charAt(res.length()-1-index) )
         {
-            return false;
+            //return false;
+            return checkPalindrome(res,index+1);
         }
-        return checkPalindrome(res,index+1);
+        return false;
+        //return checkPalindrome(res,index+1);
     }
 }
