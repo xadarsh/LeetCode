@@ -7,7 +7,7 @@ class Solution {
     {
         if(index>=c.length/2)
         {
-
+            return;
         }
         else
         {
